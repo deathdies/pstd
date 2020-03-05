@@ -79,7 +79,7 @@ echo -e $N"[+] WA       : +6281233657831"
 echo "[+] Email    : death.die112@gmail.com"
 echo "[+] Github   : https://github.com/deathdies"
 echo "[+] FaceBook : https://facebook.com/deathdie.sugito"
-echo "[+] Author By de@hdies"
+echo "[+] Menu By de@hdies"
 echo "[+] P10k ScreenFetch Termux Deluxe!"
 rm "$HOME/zshrc.sh"
 chsh -s bash
