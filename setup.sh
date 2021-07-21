@@ -1,113 +1,108 @@
-#!/bin/bash
-PIXIE=$(mktemp)
-base64 -d  >${PIXIE}<<DIXIE
-Y2xlYXIKY2F0IDw8ICJFT0YiCuKWhOKUgOKUgOKUgOKWhOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKWhOKUgOKUgOKUgOKWhArilojiloDilojiloDilojilIDilIDilIDilIDiloTilojiloTilIDi
-lojiloDilojiloDilojilIDiloTilojiloQK4paI4paE4paI4paE4paI4pSA4pSA4pSA4paA4paA
-4paI4paI4paI4paI4paE4paI4paE4paI4paI4paI4paI4paA4paACuKUgOKWiOKWiOKWiOKUgOKU
-gOKWhOKWhOKUgOKUgOKUgOKUgOKUgOKWgOKWiOKWgOKWiOKWgArilIDilojilojilojilojilpDi
-lojilIDilojilIBQzLNvzLN3zLNlzLNyzLNMzLNlzLN2zLNlzLNszLMxzLMwzLNrzLMK4pSA4paI
-4paI4paI4paI4pSA4pSA4pSA4paI4pSAU8yzY8yzcsyzZcyzZcyzbsyzRsyzZcyzdMyzY8yzaMyz
-4pSAVMyzZcyzcsyzbcyzdcyzeMyz4pSARMyzZcyzbMyzdcyzeMyzZcyzCuKUgOKWgOKWgOKWgOKW
-gOKWgOKWgOKWgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApFT0YKZWNobyAi4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ
-4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ
-4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWRIgplY2hvICJBdHRl
-bnRpb24hIgplY2hvICJbICsgXSBTaXplIFBhY2thZ2UgQW5kIEluc3RhbGxhdGlvbiIKcmVhZCAt
-cCAiWyArIF0gMTAwTWLCsSA+Pj4gW0VudGVyXSIgZW50ZXIKY2xlYXIKY2F0IDw8ICJFT0YiCuKW
-hOKUgOKUgOKUgOKWhOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKWhOKUgOKUgOKUgOKWhAriloji
-loDilojiloDilojilIDilIDilIDilIDiloTilojiloTilIDilojiloDilojiloDilojilIDiloTi
-lojiloQK4paI4paE4paI4paE4paI4pSA4pSA4pSA4paA4paA4paI4paI4paI4paI4paE4paI4paE
-4paI4paI4paI4paI4paA4paACuKUgOKWiOKWiOKWiOKUgOKUgOKWhOKWhOKUgOKUgOKUgOKUgOKU
-gOKWgOKWiOKWgOKWiOKWgArilIDilojilojilojilojilpDilojilIDilojilIBQzLNvzLN3zLNl
-zLNyzLNMzLNlzLN2zLNlzLNszLMxzLMwzLNrzLMK4pSA4paI4paI4paI4paI4pSA4pSA4pSA4paI
-4pSAU8yzY8yzcsyzZcyzZcyzbsyzRsyzZcyzdMyzY8yzaMyz4pSAVMyzZcyzcsyzbcyzdcyzeMyz
-4pSARMyzZcyzbMyzdcyzeMyzZcyzCuKUgOKWgOKWgOKWgOKWgOKWgOKWgOKWgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgApFT0YKZWNobyAi4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ
-4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ
-4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWRIgplY2hvICJbICsgXSBJbnN0YWxsaW5nIFJlcXVpcmUg
-UGFja2FnZS4uLiIKcGtnIHVwZGF0ZSAteQpwa2cgdXBncmFkZSAteQpjbGVhcgpjYXQgPDwgIkVP
-RiIK4paE4pSA4pSA4pSA4paE4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4paE4pSA4pSA4pSA4paE
-CuKWiOKWgOKWiOKWgOKWiOKUgOKUgOKUgOKUgOKWhOKWiOKWhOKUgOKWiOKWgOKWiOKWgOKWiOKU
-gOKWhOKWiOKWhArilojiloTilojiloTilojilIDilIDilIDiloDiloDilojilojilojilojiloTi
-lojiloTilojilojilojilojiloDiloAK4pSA4paI4paI4paI4pSA4pSA4paE4paE4pSA4pSA4pSA
-4pSA4pSA4paA4paI4paA4paI4paACuKUgOKWiOKWiOKWiOKWiOKWkOKWiOKUgOKWiOKUgFDMs2/M
-s3fMs2XMs3LMs0zMs2XMs3bMs2XMs2zMszHMszDMs2vMswrilIDilojilojilojilojilIDilIDi
-lIDilojilIBTzLNjzLNyzLNlzLNlzLNuzLNGzLNlzLN0zLNjzLNozLPilIBUzLNlzLNyzLNtzLN1
-zLN4zLPilIBEzLNlzLNszLN1zLN4zLNlzLMK4pSA4paA4paA4paA4paA4paA4paA4paA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSACkVPRgplY2hvICLilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDi
-lZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDi
-lZDilZDilZDilZDilZDilZDilZDilZDilZDilZEiCmVjaG8gIlsgKyBdIFBsZWFzZSBCZSBwYXRp
-ZW50IHVudGlsIgplY2hvICJbICsgXSBUaGUgRG93bmxvYWQgQW5kIEluc3RhbGxhdGlvbiBpcyBD
-b21wbGV0ZSEiCnBrZyBpbnN0YWxsIHRlcm11eC1lbGYtY2xlYW5lciAteQpwa2cgaW5zdGFsbCAt
-eSBnaXQgenNoIHNjcmVlbmZldGNoIHNsIHJ1c3QgbHNkCmNsZWFyCmNhdCA8PCAiRU9GIgriloTi
-lIDilIDilIDiloTilIDilIDilIDilIDilIDilIDilIDilIDiloTilIDilIDilIDiloQK4paI4paA
-4paI4paA4paI4pSA4pSA4pSA4pSA4paE4paI4paE4pSA4paI4paA4paI4paA4paI4pSA4paE4paI
-4paECuKWiOKWhOKWiOKWhOKWiOKUgOKUgOKUgOKWgOKWgOKWiOKWiOKWiOKWiOKWhOKWiOKWhOKW
-iOKWiOKWiOKWiOKWgOKWgArilIDilojilojilojilIDilIDiloTiloTilIDilIDilIDilIDilIDi
-loDilojiloDilojiloAK4pSA4paI4paI4paI4paI4paQ4paI4pSA4paI4pSAUMyzb8yzd8yzZcyz
-csyzTMyzZcyzdsyzZcyzbMyzMcyzMMyza8yzCuKUgOKWiOKWiOKWiOKWiOKUgOKUgOKUgOKWiOKU
-gFPMs2PMs3LMs2XMs2XMs27Ms0bMs2XMs3TMs2PMs2jMs+KUgFTMs2XMs3LMs23Ms3XMs3jMs+KU
-gETMs2XMs2zMs3XMs3jMs2XMswrilIDiloDiloDiloDiloDiloDiloDiloDilIDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIAKRU9GCmVjaG8gIuKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKV
-kOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKV
-kOKVkOKVkOKVkOKVkOKVkOKVkOKVkSIKZWNobyAiWyArIF0gUHJvY2VzcyBDbG9uZSBBbmQgSW5z
-dGFsbGF0aW9uLi4uIgpnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL2RlYXRoZGllcy9wc3Rk
-LmdpdCAiJEhPTUUvLnRlcm11eCIgLS1kZXB0aCAxCmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5j
-b20vcm9ta2F0di9wb3dlcmxldmVsMTBrLmdpdCAiJEhPTUUvLnRlcm11eC96c2giIC0tZGVwdGgg
-MQpnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL3pzaC11c2Vycy96c2gtYXV0b3N1Z2dlc3Rp
-b25zICIkSE9NRS8udGVybXV4L3BsdWdpbnMvenNoLWF1dG9zdWdnZXN0aW9ucyIgLS1kZXB0aCAx
-CmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vemRoYXJtYS9mYXN0LXN5bnRheC1oaWdobGln
-aHRpbmcuZ2l0ICIkSE9NRS8udGVybXV4L3BsdWdpbnMvZmFzdC1zeW50YXgtaGlnaGxpZ2h0aW5n
-IiAtLWRlcHRoIDEKY2FyZ28gaW5zdGFsbCAtLWdpdCBodHRwczovL2dpdGh1Yi5jb20vUGVsdG9j
-aGUvbHNkLmdpdCAtLWJyYW5jaCBtYXN0ZXIKY2xlYXIKY2F0IDw8ICJFT0YiCuKWhOKUgOKUgOKU
-gOKWhOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKWhOKUgOKUgOKUgOKWhArilojiloDilojiloDi
-lojilIDilIDilIDilIDiloTilojiloTilIDilojiloDilojiloDilojilIDiloTilojiloQK4paI
-4paE4paI4paE4paI4pSA4pSA4pSA4paA4paA4paI4paI4paI4paI4paE4paI4paE4paI4paI4paI
-4paI4paA4paACuKUgOKWiOKWiOKWiOKUgOKUgOKWhOKWhOKUgOKUgOKUgOKUgOKUgOKWgOKWiOKW
-gOKWiOKWgArilIDilojilojilojilojilpDilojilIDilojilIBQzLNvzLN3zLNlzLNyzLNMzLNl
-zLN2zLNlzLNszLMxzLMwzLNrzLMK4pSA4paI4paI4paI4paI4pSA4pSA4pSA4paI4pSAU8yzY8yz
-csyzZcyzZcyzbsyzRsyzZcyzdMyzY8yzaMyz4pSAVMyzZcyzcsyzbcyzdcyzeMyz4pSARMyzZcyz
-bMyzdcyzeMyzZcyzCuKUgOKWgOKWgOKWgOKWgOKWgOKWgOKWgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApFT0YK
-ZWNobyAi4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ
-4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ
-4pWQ4pWQ4pWQ4pWQ4pWRIgplY2hvICJbICsgXSBDaGFuZ2UgUGVybWlzc2lvbiBGaWxlcy4uLiIK
-Y2htb2QgK3ggIiRIT01FLy50ZXJtdXgvbWVudS9wc3RkLnNoIgpjaG1vZCAreCAiJEhPTUUvLnRl
-cm11eC9tZW51L2ZvbnRzLnNoIgpjaG1vZCAreCAiJEhPTUUvLnRlcm11eC9tZW51L3RoZW1lcy5z
-aCIKY2htb2QgK3ggIiRIT01FLy50ZXJtdXgvbWVudS9jb2xvcnMuc2giCmNobW9kICt4ICIkSE9N
-RS8udGVybXV4L21lbnUvc2NyZWVuZmV0Y2guc2giCmNobW9kICt4ICIkSE9NRS8udGVybXV4L21l
-bnUvdXBkYXRlLnNoIgpjaG1vZCAreCAiJEhPTUUvLnRlcm11eC9tZW51L2d1aWRlLnNoIgpjaG1v
-ZCAreCAiJEhPTUUvLnRlcm11eC9tZW51L3Jlc2V0LnNoIgpjaG1vZCAreCAiJEhPTUUvLnRlcm11
-eC9tZW51L2V4aXQuc2giCmNobW9kICt4ICIkSE9NRS8udGVybXV4L21lbnUvdW5pbnN0YWxsLnNo
-IgpybSAiJEhPTUUvLnpzaHJjIgplY2hvICJleHRyYS1rZXlzID0gWyAgWydFU0MnLCdQR1VQJywn
-SE9NRScsJy8nLCdERUwnLCdMRUZUJywnVVAnLCdSSUdIVCddLCAgWydUQUInLCdQR0ROJywnRU5E
-JywnLScsJ0JLU1AnLCdBTFQnLCdET1dOJywnQ1RSTCddIF0iID4gIiRIT01FLy50ZXJtdXgvdGVy
-bXV4LnByb3BlcnRpZXMiCmNwICIkSE9NRS8udGVybXV4L21lbnUvcmVzZXQuc2giICIkSE9NRS8u
-enNocmMiCmNwICIkSE9NRS8udGVybXV4L2ZvbnRzLzBfRGVmYXVsdCIgIiRIT01FLy50ZXJtdXgv
-Zm9udC50dGYiCmNwICIkSE9NRS8uY2FyZ28vYmluL2xzZCIgIi9kYXRhL2RhdGEvY29tLnRlcm11
-eC9maWxlcy91c3IvYmluL2FwcGxldHMiCnRlcm11eC1lbGYtY2xlYW5lciAiL2RhdGEvZGF0YS9j
-b20udGVybXV4L2ZpbGVzL3Vzci9iaW4vYXBwbGV0cy9sc2QiCmNsZWFyCmNhdCA8PCAiRU9GIgri
-loTilIDilIDilIDiloTilIDilIDilIDilIDilIDilIDilIDilIDiloTilIDilIDilIDiloQK4paI
-4paA4paI4paA4paI4pSA4pSA4pSA4pSA4paE4paI4paE4pSA4paI4paA4paI4paA4paI4pSA4paE
-4paI4paECuKWiOKWhOKWiOKWhOKWiOKUgOKUgOKUgOKWgOKWgOKWiOKWiOKWiOKWiOKWhOKWiOKW
-hOKWiOKWiOKWiOKWiOKWgOKWgArilIDilojilojilojilIDilIDiloTiloTilIDilIDilIDilIDi
-lIDiloDilojiloDilojiloAK4pSA4paI4paI4paI4paI4paQ4paI4pSA4paI4pSAUMyzb8yzd8yz
-ZcyzcsyzTMyzZcyzdsyzZcyzbMyzMcyzMMyza8yzCuKUgOKWiOKWiOKWiOKWiOKUgOKUgOKUgOKW
-iOKUgFPMs2PMs3LMs2XMs2XMs27Ms0bMs2XMs3TMs2PMs2jMs+KUgFTMs2XMs3LMs23Ms3XMs3jM
-s+KUgETMs2XMs2zMs3XMs3jMs2XMswrilIDiloDiloDiloDiloDiloDiloDiloDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIAKRU9GCmVjaG8gIuKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKV
-kOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKV
-kOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkSIKZWNobyAiWyArIF0gRG9uZS4uLiIKZWNobyAnWyAh
-IF0gVXNhZ2UgInBzdGQiJwpyZWFkIC1wICIgICAgIHRvIERpc3BsYXkgdGhlIE1haW4gTWVudSEg
-Pj4+IFtFbnRlcl0iIGVudGVyCmVjaG8gIlsgISBdIE5vdyBPcGVuIE5ldyBTZXNzaW9uIgpyZWFk
-IC1wICIgICAgIG9yIFJlc3RhcnQgVXIgVGVybXV4ISA+Pj4gW0VudGVyXSIgZW50ZXIKZWNobyAi
-WyArIF0gRmluaXNoaW5nLi4uIgpzbGVlcCAxCnJtIC1yZiAiJEhPTUUvLmNhcmdvIgpybSAtcmYg
-IiRIT01FL3BzdGQiCmNoc2ggLXMgenNoCmV4ZWMgenNoCmV4aXQK
-DIXIE
-source ${PIXIE}
-rm -rf ${PIXIE}
+clear
+cat << "EOF"
+▄───▄────────▄───▄
+█▀█▀█────▄█▄─█▀█▀█─▄█▄
+█▄█▄█───▀▀████▄█▄████▀▀
+─███──▄▄─────▀█▀█▀
+─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
+─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
+─▀▀▀▀▀▀▀────────────────────────
+EOF
+echo "════════════════════════════════════════║"
+echo "Attention!"
+echo "[ + ] Size Package And Installation"
+read -p "[ + ] 100Mb± >>> [Enter]" enter
+clear
+cat << "EOF"
+▄───▄────────▄───▄
+█▀█▀█────▄█▄─█▀█▀█─▄█▄
+█▄█▄█───▀▀████▄█▄████▀▀
+─███──▄▄─────▀█▀█▀
+─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
+─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
+─▀▀▀▀▀▀▀────────────────────────
+EOF
+echo "════════════════════════════════════════║"
+echo "[ + ] Installing Require Package..."
+apt update -y
+apt upgrade -y
+clear
+cat << "EOF"
+▄───▄────────▄───▄
+█▀█▀█────▄█▄─█▀█▀█─▄█▄
+█▄█▄█───▀▀████▄█▄████▀▀
+─███──▄▄─────▀█▀█▀
+─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
+─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
+─▀▀▀▀▀▀▀────────────────────────
+EOF
+echo "════════════════════════════════════════║"
+echo "[ + ] Please Be patient until"
+echo "[ + ] The Download And Installation is Complete!"
+pkg install termux-elf-cleaner -y
+pkg install -y git zsh screenfetch sl lsd
+clear
+cat << "EOF"
+▄───▄────────▄───▄
+█▀█▀█────▄█▄─█▀█▀█─▄█▄
+█▄█▄█───▀▀████▄█▄████▀▀
+─███──▄▄─────▀█▀█▀
+─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
+─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
+─▀▀▀▀▀▀▀────────────────────────
+EOF
+echo "════════════════════════════════════════║"
+echo "[ + ] Process Clone And Installation..."
+git clone https://github.com/deathdies/pstd.git "$HOME/.termux" --depth 1
+git clone https://github.com/romkatv/powerlevel10k.git "$HOME/.termux/zsh" --depth 1
+git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.termux/plugins/zsh-autosuggestions" --depth 1
+git clone https://github.com/zdharma/fast-syntax-highlighting.git "$HOME/.termux/plugins/fast-syntax-highlighting" --depth 1
+clear
+cat << "EOF"
+▄───▄────────▄───▄
+█▀█▀█────▄█▄─█▀█▀█─▄█▄
+█▄█▄█───▀▀████▄█▄████▀▀
+─███──▄▄─────▀█▀█▀
+─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
+─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
+─▀▀▀▀▀▀▀────────────────────────
+EOF
+echo "════════════════════════════════════════║"
+echo "[ + ] Change Permission Files..."
+chmod +x "$HOME/.termux/menu/pstd.sh"
+chmod +x "$HOME/.termux/menu/fonts.sh"
+chmod +x "$HOME/.termux/menu/themes.sh"
+chmod +x "$HOME/.termux/menu/colors.sh"
+chmod +x "$HOME/.termux/menu/screenfetch.sh"
+chmod +x "$HOME/.termux/menu/update.sh"
+chmod +x "$HOME/.termux/menu/guide.sh"
+chmod +x "$HOME/.termux/menu/reset.sh"
+chmod +x "$HOME/.termux/menu/exit.sh"
+chmod +x "$HOME/.termux/menu/uninstall.sh"
+rm "$HOME/.zshrc"
+echo "extra-keys = [  ['ESC','PGUP','HOME','/','DEL','LEFT','UP','RIGHT'],  ['TAB','PGDN','END','-','BKSP','ALT','DOWN','CTRL'] ]" > "$HOME/.termux/termux.properties"
+cp "$HOME/.termux/menu/reset.sh" "$HOME/.zshrc"
+cp "$HOME/.termux/fonts/0_Default" "$HOME/.termux/font.ttf"
+termux-elf-cleaner "/data/data/com.termux/files/usr/bin/applets/lsd"
+clear
+cat << "EOF"
+▄───▄────────▄───▄
+█▀█▀█────▄█▄─█▀█▀█─▄█▄
+█▄█▄█───▀▀████▄█▄████▀▀
+─███──▄▄─────▀█▀█▀
+─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
+─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
+─▀▀▀▀▀▀▀────────────────────────
+EOF
+echo "════════════════════════════════════════║"
+echo "[ + ] Done..."
+echo '[ ! ] Usage "pstd"'
+read -p "     to Display the Main Menu! >>> [Enter]" enter
+echo "[ ! ] Now Open New Session"
+read -p "     or Restart Ur Termux! >>> [Enter]" enter
+echo "[ + ] Finishing..."
+sleep 1
+rm -rf "$HOME/pstd"
+chsh -s zsh
+exec zsh
+exit
