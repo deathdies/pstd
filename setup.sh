@@ -83,7 +83,6 @@ rm "$HOME/.zshrc"
 echo "extra-keys = [  ['ESC','PGUP','HOME','/','DEL','LEFT','UP','RIGHT'],  ['TAB','PGDN','END','-','BKSP','ALT','DOWN','CTRL'] ]" > "$HOME/.termux/termux.properties"
 cp "$HOME/.termux/menu/reset.sh" "$HOME/.zshrc"
 cp "$HOME/.termux/fonts/0_Default" "$HOME/.termux/font.ttf"
-termux-elf-cleaner "/data/data/com.termux/files/usr/bin/applets/lsd"
 clear
 cat << "EOF"
 ▄───▄────────▄───▄
