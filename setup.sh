@@ -1,17 +1,6 @@
 clear
-cat << "EOF"
-▄───▄────────▄───▄
-█▀█▀█────▄█▄─█▀█▀█─▄█▄
-█▄█▄█───▀▀████▄█▄████▀▀
-─███──▄▄─────▀█▀█▀
-─████▐█─█─P̳o̳w̳e̳r̳L̳e̳v̳e̳l̳1̳0̳k̳
-─████───█─S̳c̳r̳e̳e̳n̳F̳e̳t̳c̳h̳─T̳e̳r̳m̳u̳x̳─D̳e̳l̳u̳x̳e̳
-─▀▀▀▀▀▀▀────────────────────────
-EOF
 echo "════════════════════════════════════════║"
-echo "Attention!"
-echo "[ + ] Size Package And Installation"
-read -p "[ + ] 100Mb± >>> [Enter]" enter
+read -p "[ + ] Press >>> [Enter] to Continue : " enter
 clear
 cat << "EOF"
 ▄───▄────────▄───▄
@@ -79,7 +68,6 @@ chmod +x "$HOME/.termux/menu/guide.sh"
 chmod +x "$HOME/.termux/menu/reset.sh"
 chmod +x "$HOME/.termux/menu/exit.sh"
 chmod +x "$HOME/.termux/menu/uninstall.sh"
-rm "$HOME/.zshrc"
 echo "extra-keys = [  ['ESC','PGUP','HOME','/','DEL','LEFT','UP','RIGHT'],  ['TAB','PGDN','END','-','BKSP','ALT','DOWN','CTRL'] ]" > "$HOME/.termux/termux.properties"
 cp "$HOME/.termux/menu/reset.sh" "$HOME/.zshrc"
 cp "$HOME/.termux/fonts/0_Default" "$HOME/.termux/font.ttf"
@@ -101,7 +89,6 @@ echo "[ ! ] Now Open New Session"
 read -p "     or Restart Ur Termux! >>> [Enter]" enter
 echo "[ + ] Finishing..."
 sleep 1
-rm -rf "$HOME/pstd"
 chsh -s zsh
 exec zsh
 exit
