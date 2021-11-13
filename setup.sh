@@ -45,7 +45,6 @@ echo "[ + ] Process Clone And Installation..."
 git clone https://github.com/deathdies/pstd.git "$HOME/.termux" --depth 1
 git clone https://github.com/romkatv/powerlevel10k.git "$HOME/.termux/zsh" --depth 1
 git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.termux/plugins/zsh-autosuggestions" --depth 1
-git clone https://github.com/zdharma/fast-syntax-highlighting.git "$HOME/.termux/plugins/fast-syntax-highlighting" --depth 1
 clear
 cat << "EOF"
 ▄───▄────────▄───▄
