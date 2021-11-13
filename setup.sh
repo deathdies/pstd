@@ -12,6 +12,7 @@ echo "════════════════════════�
 echo "[ + ] Installing Require Package..."
 apt update -y
 apt upgrade -y
+rm -rf "$HOME/.termux"
 clear
 cat << "EOF"
 ▄───▄────────▄───▄
@@ -27,6 +28,7 @@ echo "[ + ] Please Be patient until"
 echo "[ + ] The Download And Installation is Complete!"
 pkg install termux-elf-cleaner -y
 pkg install -y git zsh screenfetch sl rust lsd
+cargo install lsd
 clear
 cat << "EOF"
 ▄───▄────────▄───▄
